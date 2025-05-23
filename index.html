@@ -139,8 +139,8 @@
         },
         room2: {
           type: 'equirectangular',
-          panorama: rooms.room2.panorama,
-          hotSpots: rooms.room2.hotspots.map(h => ({
+          panorama: piazza.room.panorama,
+          hotSpots: piazza.room.hotspots.map(h => ({
             pitch: h.pitch,
             yaw: h.yaw,
             type: 'custom',
@@ -164,7 +164,7 @@
 
         hotSpotDiv.addEventListener('click', () => {
           if (args.id === 'text') {
-            showOverlay(`<h2>Welcome!</h2><p>This is a simple text-only popup for demonstration purposes.</p>`);
+            showOverlay(`<h2>Hello</h2><p>Explore the Piazza</p>`);
           } else if (args.id === 'image') {
             showOverlay(`<h2>Artifact Display</h2><p>This bear is from Singapore Discovery Centre</p><img src="gorilla.jpg" alt="gorilla face">`);
           } else if (args.id === 'video') {
