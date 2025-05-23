@@ -128,8 +128,8 @@
       scenes: {
         room1: {
           type: 'equirectangular',
-          panorama: rooms.room2.panorama,
-          hotSpots: rooms.room2.hotspots.map(h => ({
+          panorama: rooms.room1.panorama,
+          hotSpots: rooms.room1.hotspots.map(h => ({
             pitch: h.pitch,
             yaw: h.yaw,
             type: 'custom',
@@ -139,8 +139,8 @@
         },
         room2: {
           type: 'equirectangular',
-          panorama: rooms.room2.panorama,
-          hotSpots: rooms.room2.hotspots.map(h => ({
+          panorama: rooms.room1.panorama,
+          hotSpots: rooms.room1.hotspots.map(h => ({
             pitch: h.pitch,
             yaw: h.yaw,
             type: 'custom',
